@@ -23,7 +23,8 @@ function createMainWindow() {
     minHeight: 400
   });
 
-  win.loadURL(`file://${__dirname}/node_modules/web-client/dist/index.html`);
+  // win.loadURL(`file://${__dirname}/node_modules/web-client/dist/index.html`);
+  win.loadURL(`http://localhost:8080`);
   win.on('closed', onClosed);
 
   return win;
