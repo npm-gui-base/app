@@ -1,0 +1,46 @@
+{
+  "name": "npm-gui-standalone",
+  "description": "npm-gui standalone is desktop application which could be installed on your system.",
+  "productName": "npm-gui standalone",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/npm-gui-base/app",
+  "author": {
+    "name": "Paweł Stefański",
+    "email": "qnick.mail@gmail.com",
+    "url": "https://github.com/npm-gui-base/app"
+  },
+  "scripts": {
+    "test": "",
+    "dev": "electron .",
+    "build": "build",
+    "build-linux": "build --linux deb tar.xz"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "electron-debug": "^1.0.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron": "^1.0.1",
+    "electron-builder": "^8.6.0",
+    "web-client": "git+https://github.com/npm-gui-base/web-client.git"
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "win": {
+      "iconUrl": "(windows-only) https link to icon"
+    }
+  }
+}
